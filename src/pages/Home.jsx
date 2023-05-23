@@ -19,7 +19,7 @@ function Home() {
             </div>
           </div>
           <div className="col-sm-6 col-6 col-md-6 text-center col-main-home d-flex flex-column justify-content-center">
-            <h6>Hello, I'm</h6>
+            <h6>Hello, I am</h6>
             <h2>Virginia</h2>
             <h3>Full Stack Developer</h3>
             <div className="mt-4 btn-action-home">

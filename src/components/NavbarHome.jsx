@@ -1,12 +1,19 @@
-import React from "react";
+import React, { useRef } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { useState } from "react";
 import { useEffect } from "react";
+import { Link } from "react-scroll";
 
 function NavbarHome() {
   const [isScrolling, setIsScrolling] = useState(false);
+
+  const ref = useRef(null);
+
+  const handleScrollNav = () => {
+    ref.current?.scrollIntoView({ behavior: "smooth" });
+  };
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -35,18 +42,25 @@ function NavbarHome() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link href="#link" className="mx-2 navbar-link">
+            <Link
+              to="about"
+              className="mx-2 navbar-link"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+            >
               About
-            </Nav.Link>
-            <Nav.Link href="#link" className="mx-2 navbar-link">
-              Experience
-            </Nav.Link>
-            <Nav.Link href="#link" className="mx-2 navbar-link">
+            </Link>
+            <Link to="#link" className="mx-2 navbar-link">
+              Skills
+            </Link>
+            <Link to="#link" className="mx-2 navbar-link">
               Projects
-            </Nav.Link>
-            <Nav.Link href="#link" className="mx-2 navbar-link">
+            </Link>
+            <Link to="#link" className="mx-2 navbar-link">
               Contact
-            </Nav.Link>
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

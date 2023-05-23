@@ -15,4 +15,6 @@
   -webkit-backdrop-filter: blur(6px);
 }
 
-
+.navbar-link {
+  cursor: pointer;
+}

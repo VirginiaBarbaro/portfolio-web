@@ -7,5 +7,64 @@
 }
 
 .description:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
+}
+
+.about-container {
+  width: 78%;
+  margin: auto;
+  background-color: #4c4c6d6d;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 2rem;
+  filter: brightness(100%);
+}
+
+.section-skills {
+  margin-top: 3rem;
+  padding: 0.5rem;
+  background-color: #ffe1946e;
+}
+
+@media (min-width: 220px) and (max-width: 574.99px) {
+  .box-icon-skills {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+.box-img {
+  margin-top: 2rem !important;
+  width: 60%;
+  margin: auto;
+}
+
+.box-img-other {
+  margin-top: 2rem !important;
+  width: 55%;
+  margin: auto;
+}
+
+.box-img-adapt {
+  margin-top: 1rem !important;
+  width: 52%;
+  margin: auto;
+}
+
+.custom-shape-divider-top-1684855587 {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1684855587 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 230px;
+}
+
+.custom-shape-divider-top-1684855587 .shape-fill {
+  fill: #ffe1946e;
 }
