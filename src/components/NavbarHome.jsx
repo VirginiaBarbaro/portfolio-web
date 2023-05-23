@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -8,12 +8,6 @@ import { Link } from "react-scroll";
 
 function NavbarHome() {
   const [isScrolling, setIsScrolling] = useState(false);
-
-  const ref = useRef(null);
-
-  const handleScrollNav = () => {
-    ref.current?.scrollIntoView({ behavior: "smooth" });
-  };
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -36,9 +30,12 @@ function NavbarHome() {
       className={`navbar-container ${
         isScrolling ? "navbar-dynamic" : "navbar-static"
       }`}
+      id="navbar"
     >
       <Container>
-        <Navbar.Brand href="#home">Virginia Barbaro</Navbar.Brand>
+        <Link to="home" spy={true} smooth={true} offset={-50} duration={500}>
+          <Navbar.Brand>Virginia Barbaro</Navbar.Brand>
+        </Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
@@ -47,12 +44,19 @@ function NavbarHome() {
               className="mx-2 navbar-link"
               spy={true}
               smooth={true}
-              offset={50}
+              offset={-60}
               duration={500}
             >
               About
             </Link>
-            <Link to="#link" className="mx-2 navbar-link">
+            <Link
+              to="skills"
+              className="mx-2 navbar-link"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+            >
               Skills
             </Link>
             <Link to="#link" className="mx-2 navbar-link">

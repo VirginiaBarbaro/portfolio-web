@@ -1,0 +1,48 @@
+.bi-check-circle-fill {
+  color: #1b9c85;
+}
+
+@media (min-width: 220px) and (max-width: 576px) {
+  .front-skills {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+
+  .back-skills {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+
+  .other-skills {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 992px) {
+  .front-skills {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+
+  .back-skills {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+
+  .other-skills {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+}
+/* Card skills  */
+
+/* .css-jv498s {
+    border: 1px solid black !important;
+} */
