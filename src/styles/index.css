@@ -1,0 +1,21 @@
+/* General Style  */
+
+:root {
+  --var-navy: #4c4c6d;
+  --var-teal: #1b9c85;
+  --var-white: #e8f6ef;
+  --var-yellow: #ffe194;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+

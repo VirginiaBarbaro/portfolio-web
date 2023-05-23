@@ -1,0 +1,11 @@
+.description {
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  background-color: #1b9c843a;
+  transition: transform 0.4s ease-in-out;
+  backdrop-filter: blur(2px);
+}
+
+.description:hover {
+  transform: scale(1.2);
+}
