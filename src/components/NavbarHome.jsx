@@ -33,7 +33,14 @@ function NavbarHome() {
       id="navbar"
     >
       <Container>
-        <Link to="home" spy={true} smooth={true} offset={-50} duration={500}>
+        <Link
+          to="home"
+          spy={true}
+          smooth={true}
+          offset={-50}
+          duration={500}
+          className="navbar-link"
+        >
           <Navbar.Brand>Virginia Barbaro</Navbar.Brand>
         </Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

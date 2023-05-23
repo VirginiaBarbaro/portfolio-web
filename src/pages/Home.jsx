@@ -3,6 +3,7 @@ import NavbarHome from "../components/NavbarHome";
 import { Button } from "@chakra-ui/react";
 import About from "./About";
 import Skills from "./Skills";
+import Projects from "./Projects";
 
 function Home() {
   return (
@@ -49,6 +50,7 @@ function Home() {
       </div>
       <About />
       <Skills />
+      <Projects />
     </>
   );
 }
