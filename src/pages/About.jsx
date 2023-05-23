@@ -10,16 +10,18 @@ function About() {
         </div>
         <div className="col-9 m-auto mt-4 p-3 description">
           <p className="text-center p-3 m-auto">
-            I am a Full Stack developer with a passion for creating impactful
-            applications for users. I have knowledge in both front-end and
-            back-end development, and I am exicited to apply my skills in
-            professional environments. I am a quick learner and a collaborative
-            team player, capable of quickly adapting and contributing
-            effectively.
+            I am a <strong>Full Stack</strong> developer with a passion for
+            creating impactful applications for users. I have knowledge in both
+            <strong> front-end</strong> and <strong>back-end</strong>{" "}
+            development, and I am <strong>exicited</strong> to apply my skills
+            in professional environments. I am a <strong>quick learner</strong>{" "}
+            and a <strong>collaborative</strong> team player, capable of{" "}
+            <strong>quickly adapting</strong> and{" "}
+            <strong>contributing effectively</strong>.
           </p>
         </div>
         <div className="mt-5">
-          <h6 className="text-muted text-center">Explore my</h6>
+          <h6 className="text-muted text-center">About my</h6>
           <h2 className="text-center">Soft skills</h2>
           <section className="section-skills">
             <div className="row mt-5 about-container">

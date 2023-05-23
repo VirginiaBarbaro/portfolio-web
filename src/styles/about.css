@@ -13,7 +13,7 @@
 .about-container {
   width: 78%;
   margin: auto;
-  background-color: #4c4c6d6d;
+  background-color: #4c4c6d3e;
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
   border-radius: 2rem;
@@ -62,7 +62,7 @@
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  height: 230px;
+  height: 231px;
 }
 
 .custom-shape-divider-top-1684855587 .shape-fill {
