@@ -1,0 +1,61 @@
+.project-section {
+  margin-top: 7rem;
+}
+
+.project-container {
+  margin-top: 4rem;
+}
+
+@media (min-width: 230px) and (max-width: 991.99px) {
+  .left-col-img {
+    width: 100%;
+  }
+
+  .right-col {
+    margin-top: 1.5rem;
+    width: 100%;
+  }
+}
+
+.btn-see-live {
+  border: 0;
+  background-image: linear-gradient(150deg, #4c4c6d, #1b9c85, #4c4c6d);
+  border-radius: 8px;
+  color: #4c4c6d;
+  display: flex;
+  padding: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-see-live span {
+  background-color: #e8f6ef;
+  padding: 5px 8px;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.btn-see-live:hover span {
+  background: none;
+  color: #e8f6ef;
+}
+
+.btn-see-live:active {
+  scale: 0.9;
+}
+
+.git-link:active {
+  scale: 0.9;
+}
+
+/* Twitter  */
+
+.twitter-project {
+  margin-top: 9rem;
+}
+
+/* TO-DO List */
+
+.todo-project {
+  margin-top: 7rem;
+}
