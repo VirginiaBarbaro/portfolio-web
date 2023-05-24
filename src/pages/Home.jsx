@@ -7,7 +7,8 @@ import Projects from "./Projects";
 import Contact from "./Contact";
 import { Link } from "react-scroll";
 
-const pdf_file_url = "http://localhost:5173/CV_Virginia_Barbaro_EN.pdf";
+const pdf_file_url =
+  "https://virginia-barbaro.vercel.app/CV_Virginia_Barbaro_EN.pdf";
 
 function Home() {
   const HandleDownloadCv = (url) => {
