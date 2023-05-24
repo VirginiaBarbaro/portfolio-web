@@ -7,7 +7,19 @@ import Projects from "./Projects";
 import Contact from "./Contact";
 import { Link } from "react-scroll";
 
+const pdf_file_url = "http://localhost:5173/CV_Virginia_Barbaro_EN.pdf";
+
 function Home() {
+  const HandleDownloadCv = (url) => {
+    const fileName = url.split("/").pop();
+    const aTag = document.createElement("a");
+    aTag.href = url;
+    aTag.setAttribute("download", fileName);
+    document.body.appendChild(aTag);
+    aTag.click();
+    aTag.remove();
+  };
+
   return (
     <>
       <NavbarHome />
@@ -27,7 +39,11 @@ function Home() {
             <h2>Virginia</h2>
             <h3>Full Stack Developer</h3>
             <div className="mt-4 btn-action-home">
-              <Button variant="outline" className="btn-home mx-2 my-2">
+              <Button
+                variant="outline"
+                className="btn-home mx-2 my-2"
+                onClick={() => HandleDownloadCv(pdf_file_url)}
+              >
                 Download CV
               </Button>
               <Link
