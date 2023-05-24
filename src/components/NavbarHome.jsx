@@ -41,11 +41,13 @@ function NavbarHome() {
           duration={500}
           className="navbar-link"
         >
-          <Navbar.Brand>Virginia Barbaro</Navbar.Brand>
+          <Navbar.Brand>
+            Virginia Barbaro <i className="bi bi-arrow-up"></i>
+          </Navbar.Brand>
         </Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto">
+          <Nav className="ms-auto menu-navbar text-black">
             <Link
               to="about"
               className="mx-2 navbar-link"
@@ -61,15 +63,29 @@ function NavbarHome() {
               className="mx-2 navbar-link"
               spy={true}
               smooth={true}
-              offset={50}
+              offset={-70}
               duration={500}
             >
               Skills
             </Link>
-            <Link to="#link" className="mx-2 navbar-link">
+            <Link
+              to="projects"
+              className="mx-2 navbar-link"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
               Projects
             </Link>
-            <Link to="#link" className="mx-2 navbar-link">
+            <Link
+              to="contact"
+              className="mx-2 navbar-link"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
               Contact
             </Link>
           </Nav>

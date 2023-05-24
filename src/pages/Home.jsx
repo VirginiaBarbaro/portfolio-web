@@ -4,6 +4,8 @@ import { Button } from "@chakra-ui/react";
 import About from "./About";
 import Skills from "./Skills";
 import Projects from "./Projects";
+import Contact from "./Contact";
+import { Link } from "react-scroll";
 
 function Home() {
   return (
@@ -28,9 +30,17 @@ function Home() {
               <Button variant="outline" className="btn-home mx-2 my-2">
                 Download CV
               </Button>
-              <Button variant="outline" className="btn-home mx-2">
-                Contact info
-              </Button>
+              <Link
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                <Button variant="outline" className="btn-home mx-2">
+                  Contact info
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -51,6 +61,7 @@ function Home() {
       <About />
       <Skills />
       <Projects />
+      <Contact />
     </>
   );
 }

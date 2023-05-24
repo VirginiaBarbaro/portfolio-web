@@ -1,0 +1,20 @@
+.header-contact {
+  margin-top: 7rem !important;
+}
+
+.contact-container {
+margin-top: 3rem;
+  padding: 1rem;
+  background-color: #e8f6ef;
+}
+
+@media (min-width: 250px) and (max-width: 767px) {
+  .row-query-contact {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .col-contact {
+    width: 100%;
+  }
+}

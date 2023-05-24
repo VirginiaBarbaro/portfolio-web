@@ -7,6 +7,7 @@ import "./styles/home.css";
 import "./styles/navbarHome.css";
 import "./styles/skills.css";
 import "./styles/projects.css";
+import "./styles/contact.css";
 
 import { BrowserRouter } from "react-router-dom";
 import { ChakraProvider } from "@chakra-ui/react";
