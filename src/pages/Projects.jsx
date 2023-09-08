@@ -177,6 +177,47 @@ function Projects() {
               </div>
             </div>
           </div>
+          {/* Blog */}
+          <div className="container project-container">
+            <div className="row">
+              <div className="col-6 left-col-img">
+                <img src="/power_blog.png" className="rounded" />
+              </div>
+              <div className="col-6 right-col">
+                <h5 className="fw-bold text-center pb-3">
+                  Power Blog | Blog platform
+                </h5>
+                <div className="p-2">
+                  <p>
+                    Power Blog is a comprehensive and functional website that
+                    allows users to perform all operations, from author
+                    registration to application management as an administrator.
+                  </p>
+                  <p>
+                    <strong>Tech used:</strong> TypeScript, NodeJS, MySQL,
+                    React, Redux, Tailwind, ChakraUI
+                  </p>
+                </div>
+                <div className="mt-4 text-center d-flex justify-content-center">
+                  <Link
+                    to="https://power-blog-front.vercel.app/"
+                    target="_blank"
+                  >
+                    <button className="btn-see-live">
+                      <span>See Live</span>
+                    </button>
+                  </Link>
+                  <Link
+                    to="https://github.com/VirginiaBarbaro"
+                    target="_blank"
+                    className="git-link"
+                  >
+                    <i className="bi bi-github ms-4 fs-3"></i>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
       </div>
     </>

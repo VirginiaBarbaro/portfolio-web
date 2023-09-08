@@ -31,9 +31,6 @@ function Skills() {
                     <div className="col-6 d-flex justify-content-center">
                       <ul className="list-inline">
                         <li>
-                          <i className="bi bi-check-circle-fill me-2"></i>HTML
-                        </li>
-                        <li>
                           {" "}
                           <i className="bi bi-check-circle-fill me-2"></i>CSS
                         </li>
@@ -41,6 +38,11 @@ function Skills() {
                           {" "}
                           <i className="bi bi-check-circle-fill me-2"></i>
                           JavaScript
+                        </li>
+                        <li>
+                          {" "}
+                          <i className="bi bi-check-circle-fill me-2"></i>
+                          TypeScript
                         </li>
                         <li>
                           {" "}
@@ -53,6 +55,11 @@ function Skills() {
                         <li>
                           {" "}
                           <i className="bi bi-check-circle-fill me-2"></i>Redux
+                        </li>
+                        <li>
+                          {" "}
+                          <i className="bi bi-check-circle-fill me-2"></i>
+                          Tailwind
                         </li>
                         <li>
                           {" "}
