@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import NavbarHome from "../components/NavbarHome";
 import { Button } from "@chakra-ui/react";
 import About from "./About";
@@ -6,6 +6,7 @@ import Skills from "./Skills";
 import Projects from "./Projects";
 import Contact from "./Contact";
 import { Link } from "react-scroll";
+import Typed from "typed.js";
 
 const pdf_file_url =
   "https://virginia-barbaro.vercel.app/CV_Virginia_Barbaro_IT.pdf";
@@ -20,6 +21,20 @@ function Home() {
     aTag.click();
     aTag.remove();
   };
+
+  const subtitle = React.useRef(null);
+
+  useEffect(() => {
+    const typed = new Typed(subtitle.current, {
+      strings: ["Full stack developer"],
+      typeSpeed: 50,
+      loop: true,
+    });
+    return () => {
+      // Destroy Typed instance during cleanup to stop animation
+      typed.destroy();
+    };
+  });
 
   return (
     <>
@@ -38,7 +53,9 @@ function Home() {
           <div className="col-sm-6 col-6 col-md-6 text-center col-main-home d-flex flex-column justify-content-center">
             <h6>Hello, I am</h6>
             <h2>Virginia</h2>
-            <h3>Full Stack Developer</h3>
+            <h3>
+              <span ref={subtitle} />
+            </h3>
             <div className="mt-4 btn-action-home">
               <Button
                 variant="outline"
