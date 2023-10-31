@@ -26,7 +26,7 @@ function Home() {
 
   useEffect(() => {
     const typed = new Typed(subtitle.current, {
-      strings: ["Full stack developer"],
+      strings: ["Full stack developer Jr"],
       typeSpeed: 50,
       loop: true,
     });
