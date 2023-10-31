@@ -48,7 +48,7 @@ function Contact() {
                   <span>
                     {" "}
                     <i className="bi bi-telephone-outbound me-2 fs-5 icon"></i>{" "}
-                    (+598) 096 241 880
+                    (+39) 351 8871157
                   </span>
                 </button>
               </div>
