@@ -9,7 +9,7 @@ import { Link } from "react-scroll";
 import Typed from "typed.js";
 
 const pdf_file_url =
-  "https://virginia-barbaro.vercel.app/CV_Virginia_Barbaro_IT.pdf";
+  "https://virginia-barbaro.vercel.app/CV_Virginia_Barbaro.pdf";
 
 function Home() {
   const HandleDownloadCv = (url) => {
